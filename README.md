@@ -1,6 +1,6 @@
 # Sam Nicholls — Portfolio
 
-The source code for my personal portfolio, live at **[samnicholls.me](https://samnicholls.me)**.
+The source code for my personal portfolio, live at **[samnicholls.dev](https://samnicholls.dev)**.
 
 I'm a Senior Front-End Engineer based in England, focused on building intuitive and accessible web applications with React and TypeScript. This site is where I introduce myself, share the projects I'm working on and make it easy to get in touch.
 
@@ -9,7 +9,7 @@ It's also a project in its own right. I use it to put into practice the things I
 ## What's on the site
 
 - **Intro:** who I am and what I do.
-- **Projects:** a showcase of my work, starting with [Components](https://components.samnicholls.me), an accessible React component library. More projects are on the way. Projects are listed in `src/data/site.ts`.
+- **Projects:** a showcase of my work, coming soon.
 - **Contact:** email and LinkedIn, plus a one-click button to copy my email address.
 
 ## Tech stack
@@ -74,6 +74,6 @@ Conventions for components, TypeScript, styling and accessibility are documented
 
 ## Contact
 
-- **Website:** [samnicholls.me](https://samnicholls.me)
-- **Email:** [contact@samnicholls.me](mailto:contact@samnicholls.me)
+- **Website:** [samnicholls.dev](https://samnicholls.dev)
+- **Email:** [contact@samnicholls.email](mailto:contact@samnicholls.email)
 - **LinkedIn:** [Sam Nicholls](https://uk.linkedin.com/in/samuel-nicholls-576253133)
