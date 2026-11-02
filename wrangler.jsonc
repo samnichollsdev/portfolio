@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "samnicholls-dev",
+  "name": "portfolio",
   "compatibility_date": "2026-10-01",
   "routes": [{ "pattern": "samnicholls.dev", "zone_name": "samnicholls.dev", "custom_domain": true }],
   "assets": {
