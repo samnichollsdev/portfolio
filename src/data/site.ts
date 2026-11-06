@@ -15,8 +15,7 @@ export type Project = {
   description: string
   highlights: readonly string[]
   tags: readonly string[]
-  liveUrl: string
-  liveLabel: string
+  live?: { url: string; label: string }
   sourceUrl: string
 }
 
@@ -27,8 +26,15 @@ export const projects: readonly Project[] = [
       'A library of accessible React components built from scratch. Each one follows the WAI-ARIA Authoring Practices and is tested to WCAG 2.2 AA, with every story doubling as a browser test that drives it by keyboard and runs axe.',
     highlights: ['Accordion', 'Button', 'Combobox', 'Dialog', 'Switch', 'Tabs', 'Toast', 'Tooltip'],
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Storybook', 'Vitest'],
-    liveUrl: 'https://components.samnicholls.dev/?path=/docs/introduction--docs',
-    liveLabel: 'View docs',
+    live: { url: 'https://components.samnicholls.dev/?path=/docs/introduction--docs', label: 'View docs' },
     sourceUrl: 'https://github.com/samnichollsdev/components',
+  },
+  {
+    title: 'Photo Frame Dashboard',
+    description:
+      'A family dashboard running on a rooted 10.1" Frameo photo frame, built on Wes Bos\'s photo-frame-dashboard project. A Vite page served by a Cloudflare Worker shows our calendar, weather, bin days, birthdays, football and Spotify, and a night mode switches the backlight off.',
+    highlights: ['Calendar', 'Weather', 'Bin days', 'Birthdays', 'Football', 'Spotify', 'Night mode'],
+    tags: ['JavaScript', 'Vite', 'Cloudflare Workers', 'Android'],
+    sourceUrl: 'https://github.com/samnichollsdev/photo-frame-dashboard',
   },
 ]

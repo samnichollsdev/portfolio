@@ -9,7 +9,7 @@ It's also a project in its own right. I use it to put into practice the things I
 ## What's on the site
 
 - **Intro:** who I am and what I do.
-- **Projects:** a showcase of my work, starting with [Components](https://components.samnicholls.dev), an accessible React component library. More projects are on the way. Projects are listed in `src/data/site.ts`.
+- **Projects:** a showcase of my work, starting with [Components](https://components.samnicholls.dev), an accessible React component library, and a family dashboard for an Android photo frame. More projects are on the way. Projects are listed in `src/data/site.ts`.
 - **Contact:** email and LinkedIn, plus a one-click button to copy my email address.
 
 ## Tech stack

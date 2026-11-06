@@ -40,17 +40,19 @@ const ProjectCard = ({ project }: { project: Project }) => {
         </ul>
 
         <div className="mt-auto flex flex-wrap gap-3 pt-8">
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="group inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 font-semibold text-neutral-950 text-sm transition hover:bg-neutral-200"
-          >
-            {project.liveLabel}
-            <span className="sr-only"> for {project.title}</span>
-            <NewTabHint />
-            <ArrowUpRightIcon className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </a>
+          {project.live && (
+            <a
+              href={project.live.url}
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 font-semibold text-neutral-950 text-sm transition hover:bg-neutral-200"
+            >
+              {project.live.label}
+              <span className="sr-only"> for {project.title}</span>
+              <NewTabHint />
+              <ArrowUpRightIcon className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
+          )}
           <a
             href={project.sourceUrl}
             target="_blank"
@@ -92,13 +94,13 @@ export const Projects = () => {
           description="Things I've built, with more on the way."
         />
 
-        <ul className="mt-10 grid gap-4 md:grid-cols-3">
+        <ul className="mt-10 grid gap-4 md:grid-cols-2">
           {projects.map((project) => (
-            <li key={project.title} className="md:col-span-2">
+            <li key={project.title}>
               <ProjectCard project={project} />
             </li>
           ))}
-          <li>
+          <li className="md:col-span-2">
             <ComingSoonCard />
           </li>
         </ul>
